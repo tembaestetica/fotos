@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Mis Fotos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .caption {
+            text-align: center;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 style="text-align: center;">Galería de Mis Fotos</h1>
+    <div class="gallery">
+        <div>
+            <a href="mis_fotos/imagen1.jpg" target="_blank">
+                <img src="mis_fotos/imagen1.jpg" alt="Descripción de la Imagen 1">
+            </a>
+            <div class="caption">Imagen 1: Descripción</div>
+        </div>
+        <div>
+            <a href="mis_fotos/imagen2.jpg" target="_blank">
+                <img src="mis_fotos/imagen2.jpg" alt="Descripción de la Imagen 2">
+            </a>
+            <div class="caption">Imagen 2: Descripción</div>
+        </div>
+        <div>
+            <a href="mis_fotos/imagen3.jpg" target="_blank">
+                <img src="mis_fotos/imagen3.jpg" alt="Descripción de la Imagen 3">
+            </a>
+            <div class="caption">Imagen 3: Descripción</div>
+        </div>
+        <div>
+            <a href="mis_fotos/imagen4.jpg" target="_blank">
+                <img src="mis_fotos/imagen4.jpg" alt="Descripción de la Imagen 4">
+            </a>
+            <div class="caption">Imagen 4: Descripción</div>
+        </div>
+        <!-- Agrega más imágenes aquí según sea necesario -->
+    </div>
+</div>
+
+</body>
+</html>
