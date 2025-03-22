@@ -2,7 +2,7 @@ $(function () {
     $("#contactForm input, #contactForm textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function ($form, event, errors) {
-            // Manejar errores en el envío
+            // Manejar errores si es necesario
         },
         submitSuccess: function ($form, event) {
             event.preventDefault();
@@ -14,7 +14,6 @@ $(function () {
             $this = $("#sendMessageButton");
             $this.prop("disabled", true);
 
-            // Enviar el formulario a contact.php
             $.ajax({
                 url: "contact.php",
                 type: "POST",
@@ -29,10 +28,8 @@ $(function () {
                     $('#success').html("<div class='alert alert-success'>");
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>×")
                         .append("</button>");
-                    $('#success > .alert-success')
-                        .append("<strong>Tu mensaje ha sido enviado.</strong>");
-                    $('#success > .alert-success')
-                        .append('</div>');
+                    $('#success > .alert-success').append("<strong>Tu mensaje ha sido enviado.</strong>");
+                    $('#success > .alert-success').append('</div>');
                     $('#contactForm').trigger("reset");
                 },
                 error: function () {
@@ -55,14 +52,11 @@ $(function () {
         },
     });
 
-    // Activar las pestañas del formulario si hay
-    $("a[data-toggle=\"tab\"]").click(function (e) {
-        e.preventDefault();
-        $(this).tab("show");
+    $('#name').focus(function () {
+        $('#success').html('');
     });
 });
 
-// Limpiar el mensaje de éxito al enfocar el campo de nombre
 $('#name').focus(function () {
     $('#success').html('');
 });
