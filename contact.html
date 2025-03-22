@@ -101,31 +101,46 @@
                         src="https://www.google.es/maps/@39.5138115,-0.1500245,9z?hl=es&entry=ttu&g_ep=EgoyMDI1MDMxOS4xIKXMDSoASAFQAw%3D%3D"
                         frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
-                <div class="col-md-6 pb-5">
-                  <!-- Reemplazar el botón de "Contáctame" por un enlace de correo -->
-<a href="mailto:tembaestetica@gmail.com" class="btn">Contáctame por Email</a>
+               !DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <title>Formulario de Contacto</title>
+</head>
+<body>
 
-<!-- Formulario de contacto -->
-<form id="contactForm" novalidate>
-    <div class="form-group">
-        <label for="name">Nombre:</label>
-        <input type="text" class="form-control" id="name" required>
-    </div>
-    <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" class="form-control" id="email" required>
-    </div>
-    <div class="form-group">
-        <label for="subject">Asunto:</label>
-        <input type="text" class="form-control" id="subject" required>
-    </div>
-    <div class="form-group">
-        <label for="message">Mensaje:</label>
-        <textarea class="form-control" id="message" required></textarea>
-    </div>
-    <button type="submit" id="sendMessageButton" class="btn">Enviar Mensaje</button>
-</form>
-<div id="success"></div>
+<div class="container">
+    <h1>Contacto</h1>
+    
+    <!-- Modificamos el botón para que funcione como un enlace mailto -->
+    <a href="mailto:tembaestetica@gmail.com" class="btn btn-primary">Contáctame por Email</a>
+
+    <form id="contactForm" novalidate>
+        <div class="form-group">
+            <label for="name">Nombre:</label>
+            <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="subject">Asunto:</label>
+            <input type="text" class="form-control" id="subject" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Mensaje:</label>
+            <textarea class="form-control" id="message" required></textarea>
+        </div>
+        <button type="submit" id="sendMessageButton" class="btn btn-success">Enviar Mensaje</button>
+    </form>
+    <div id="success"></div>
+</div>
+
                             </div>
                             <div>
                                 <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit" id="sendMessageButton"><a href="mailto:tembaestetica@gmail.com" class="btn">Contáctame</a></button>
