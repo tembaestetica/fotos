@@ -102,29 +102,30 @@
                         frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
                 <div class="col-md-6 pb-5">
-                    <div class="contact-form">
-                        <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                            <div class="control-group">
-                                <input type="text" class="form-control bg-transparent p-4" id="name" placeholder="Tu nombre"
-                                    required="required" data-validation-required-message="Por favor introduce tu nombre" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group">
-                                <input type="email" class="form-control bg-transparent p-4" id="email" placeholder="Tu correo"
-                                    required="required" data-validation-required-message="Por favor introduce tu email" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group">
-                                <input type="text" class="form-control bg-transparent p-4" id="subject" placeholder="Tema"
-                                    required="required" data-validation-required-message="Por favor sobre que quieres comunicarte" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group">
-                                <textarea class="form-control bg-transparent py-3 px-4" rows="5" id="message" placeholder="Mensaje"
-                                    required="required"
-                                    data-validation-required-message="Por favor introduce tu mensaje"></textarea>
-                                <p class="help-block text-danger"></p>
+                  <!-- Reemplazar el botón de "Contáctame" por un enlace de correo -->
+<a href="mailto:tembaestetica@gmail.com" class="btn">Contáctame por Email</a>
+
+<!-- Formulario de contacto -->
+<form id="contactForm" novalidate>
+    <div class="form-group">
+        <label for="name">Nombre:</label>
+        <input type="text" class="form-control" id="name" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" required>
+    </div>
+    <div class="form-group">
+        <label for="subject">Asunto:</label>
+        <input type="text" class="form-control" id="subject" required>
+    </div>
+    <div class="form-group">
+        <label for="message">Mensaje:</label>
+        <textarea class="form-control" id="message" required></textarea>
+    </div>
+    <button type="submit" id="sendMessageButton" class="btn">Enviar Mensaje</button>
+</form>
+<div id="success"></div>
                             </div>
                             <div>
                                 <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit" id="sendMessageButton"><a href="mailto:tembaestetica@gmail.com" class="btn">Contáctame</a></button>
