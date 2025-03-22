@@ -1,73 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Start your development with FoodHut landing page.">
     <meta name="author" content="Devcrud">
-    <title>Temba Estética< Free Bootstrap 4.3.x template</title>
+    <title>Temba Estética Free Bootstrap 4.3.x template</title>
    
-    <!-- font icons -->
+    <!-- Font icons -->
     <link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
-
     <link rel="stylesheet" href="vendors/animate/animate.css">
 
     <!-- Bootstrap + FoodHut main styles -->
-	<link rel="stylesheet" href="css/foodhut.css">
+    <link rel="stylesheet" href="css/foodhut.css">
+
+    <style>
+        body {
+            background-color: #ffebee; /* Rosa palo de fondo */
+        }
+
+        .separador {
+            border-top: 2px solid #ccc; /* Color y grosor de la línea */
+            margin: 20px 0; /* Espacio vertical alrededor del separador */
+        }
+    </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    
-    <!-- Navbar -->
-    <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top" data-spy="affix" data-offset-top="10">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="sobre.html">SobreTEMBA</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#gallary">Galeria</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#book-table">Agendar</a>
-                </li>
-            </ul>
-            <a class="navbar-brand m-auto" href="#">
-                <img src="assets/imgs/logo.svg" class="brand-img" alt="">
-                <span class="brand-txt">TEMBA ESTÉTICA</span>
-            </a>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="SERVICIOS.html">Servicios<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="testimonios.html">Clientes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contacta.html">Contacta</a>
-                </li>
-                <li class="nav-item">
-                    <a href="components.html" class="btn btn-primary ml-xl-4">Components</a>
-                </li>
-                   <a href="SERVICIOS.html" class="btn btn-primary ml-xl-4">COMPRAS</a>
-			    <ul class="submenu">
-            <li><a href="seviciosfaciales.html">FACIAL</a></li>
-            <li><a href="servicioscorporales.html">CORPORAL</a></li>
-            <li><a href="tatuajes.html">TATUAJES</a></li>
-            <li><a href="peluqueria.html">PELUQUERIA</a></li>
-            <li><a href="cursos.html">CURSOS</a>
-	    </li></ul>	    
-            </ul>
-        </div>
-    </nav>
-
-
-
 
     <div class="separador"></div>
 
@@ -76,6 +34,92 @@
     <!-- end Google Calendar Appointment Scheduling -->
 
     <div class="separador"></div>
+
+</body>
+</html>
+Descripción de los cambios:
+Color de fondo: He añadido la propiedad background-color: #ffebee; en el estilo del cuerpo para establecer un fondo rosa palo.
+
+Separador: Se añade un <div class="separador"></div> antes y después del iframe para crear un separador visual.
+
+Recuerda que puedes modificar el color del separador o cualquier otro estilo según tus preferencias. Este es solo un ejemplo básico y puedes personalizarlo aún más para que se ajuste a tus necesidades.
+
+Copy
+Humanize
+Summarize
+Delete
+quiero que me quede por debajo del menu que tengo
+Delete
+Para colocar el iframe y el contenido relacionado por debajo de tu menú en el documento HTML que has proporcionado, puedes envolver el iframe y los separadores dentro de un contenedor que esté diseñado para aparecer por debajo del menú. 
+
+En este caso, asegúrate de que el menú (que entiendo ya está en tu template) está en la parte superior y, para asegurarte de que el iframe no se solape con el menú, puedes usar márgenes o rellenos.
+
+Aquí tienes un ejemplo de cómo organizar tu diseño asumiendo que ya tienes un menú en el DOM:
+
+CopyReplit
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with FoodHut landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Temba Estética Free Bootstrap 4.3.x template</title>
+   
+    <!-- Font icons -->
+    <link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="vendors/animate/animate.css">
+
+    <!-- Bootstrap + FoodHut main styles -->
+    <link rel="stylesheet" href="css/foodhut.css">
+
+    <style>
+        body {
+            background-color: #ffebee; /* Rosa palo de fondo */
+        }
+        
+        .content {
+            padding-top: 80px; /* Margen superior para dar espacio debajo del menú */
+        }
+
+        .separador {
+            border-top: 2px solid #ccc; /* Color y grosor de la línea */
+            margin: 20px 0; /* Espacio vertical alrededor del separador */
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Aquí se asume que tienes tu menú de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Mi Sitio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="separador"></div>
+
+        <!-- Google Calendar Appointment Scheduling begin -->
+        <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0VFtSM6Jb33YMG6OnecTPp0k79P14ZbzTq3HNF7HH0bPzSmlmVcqIEjgv2e_biUpgmTyWFGHmT?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>
+        <!-- end Google Calendar Appointment Scheduling -->
+
+        <div class="separador"></div>
+    </div>
 
 	 
 
