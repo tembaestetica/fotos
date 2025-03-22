@@ -11383,3 +11383,41 @@ pre {
   visibility: visible;
   opacity: 1;
 }
+
+.nav {
+    list-style-type: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
+    position: relative; /* Para la posición correcta del submenú */
+}
+
+.nav-item {
+    position: relative; /* Necesario para el posicionamiento del submenú */
+}
+
+.submenu {
+    display: none; /* Oculto por defecto */
+    position: absolute; /* Posicionar en relación al nav-item */
+    background-color: #fff; /* Color de fondo del submenú */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    z-index: 1000; /* Asegúrate de que el submenú esté en la parte superior */
+    margin-top: 10px; /* Espacio arriba del submenú */
+}
+
+.submenu li {
+    padding: 10px; /* Espaciado interno de cada elemento del submenú */
+}
+
+.submenu li a {
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    color: #333; /* Color del texto */
+}
+
+.submenu li:hover {
+    background-color: #f7f7f7; /* Color de fondo al pasar el mouse */
+}
+
+/* Mostrar el submenú al pasar el ratón por encima de nav-item */
+.nav-item:hover .submenu {
+    display: block; /* Muestra el submenú al pasar el ratón */
+}
