@@ -1,8 +1,8 @@
 $(function () {
-
     $("#contactForm input, #contactForm textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function ($form, event, errors) {
+            // Manejar errores en el envío
         },
         submitSuccess: function ($form, event) {
             event.preventDefault();
@@ -14,6 +14,7 @@ $(function () {
             $this = $("#sendMessageButton");
             $this.prop("disabled", true);
 
+            // Enviar el formulario a contact.php
             $.ajax({
                 url: "contact.php",
                 type: "POST",
@@ -26,19 +27,19 @@ $(function () {
                 cache: false,
                 success: function () {
                     $('#success').html("<div class='alert alert-success'>");
-                    $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-                            .append("</button>");
+                    $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>×")
+                        .append("</button>");
                     $('#success > .alert-success')
-                            .append("<strong>Your message has been sent. </strong>");
+                        .append("<strong>Tu mensaje ha sido enviado.</strong>");
                     $('#success > .alert-success')
-                            .append('</div>');
+                        .append('</div>');
                     $('#contactForm').trigger("reset");
                 },
                 error: function () {
                     $('#success').html("<div class='alert alert-danger'>");
-                    $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-                            .append("</button>");
-                    $('#success > .alert-danger').append($("<strong>").text("Sorry " + name + ", it seems that our mail server is not responding. Please try again later!"));
+                    $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>×")
+                        .append("</button>");
+                    $('#success > .alert-danger').append($("<strong>").text("Perdón " + name + ", parece que nuestro servidor de correo no está respondiendo"));
                     $('#success > .alert-danger').append('</div>');
                     $('#contactForm').trigger("reset");
                 },
@@ -54,12 +55,14 @@ $(function () {
         },
     });
 
+    // Activar las pestañas del formulario si hay
     $("a[data-toggle=\"tab\"]").click(function (e) {
         e.preventDefault();
         $(this).tab("show");
     });
 });
 
+// Limpiar el mensaje de éxito al enfocar el campo de nombre
 $('#name').focus(function () {
     $('#success').html('');
 });
