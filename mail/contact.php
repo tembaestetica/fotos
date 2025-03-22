@@ -9,9 +9,9 @@ $email = strip_tags(htmlspecialchars($_POST['email']));
 $m_subject = strip_tags(htmlspecialchars($_POST['subject']));
 $message = strip_tags(htmlspecialchars($_POST['message']));
 
-$to = "<a href="mailto:tembaestetica@gmail.com"></a>"; // Change this email to your //
+$to = "<a href="<a href="mailto:tembaestetica@gmail.com" class="btn">Contáctame</a>"; // Change this email to your //
 $subject = "$m_subject:  $name";
-$body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\n\nEmail: $email\n\nSubject: $m_subject\n\nMessage: $message";
+$body = "Has recibido un nuevo mensaje de la web de TEMBA.\n\n"."Aqui estan los detalles:\n\nNonbre: $name\n\n\nCorreo: $email\n\nTema: $m_subject\n\nMensaje: $message";
 $header = "From: $email";
 $header .= "Reply-To: $email";	
 
