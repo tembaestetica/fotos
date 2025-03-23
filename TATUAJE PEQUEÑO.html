@@ -1,4 +1,6 @@
-<!DOCTYPE html> 
+
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf8">
@@ -14,6 +16,11 @@
     <! Bootstrap + FoodHut main styles >
     <link rel="stylesheet" href="css/foodhut.css">
     <style>
+        .offeralert {
+            color: pink;
+            fontweight: bold;
+        }
+   
         .offeralert {
             color: pink;
             font-weight: bold;
@@ -49,9 +56,14 @@
             text-decoration: none;
             border-radius: 5px;
         }
+        
     </style>
 </head>
-<body>
+<body dataspy="scroll" datatarget=".navbar" dataoffset="40" id="home">
+    
+
+
+
     <! Navbar >
     <nav class="customnavbar navbar navbarexpandlg navbardark fixedtop" dataspy="affix" dataoffsettop="10">
         <button class="navbartoggler" type="button" datatoggle="collapse" datatarget="#navbarSupportedContent" ariacontrols="navbarSupportedContent" ariaexpanded="false" arialabel="Toggle navigation">
@@ -59,22 +71,49 @@
         </button>
         <div class="collapse navbarcollapse" id="navbarSupportedContent">
             <ul class="navbarnav">
-                <li class="navitem"><a class="navlink" href="index.html">Inicio</a></li>
-                <li class="navitem"><a class="navlink" href="sobre.html">Sobre TEMBA</a></li>
-                <li class="navitem"><a class="navlink" href="#gallary">Galeria</a></li>
-                <li class="navitem"><a class="navlink" href="#booktable">Agendar</a></li>
+                <li class="navitem">
+                    <a class="navlink" href="index.html">Inicio</a>
+                </li>
+                <li class="navitem">
+                    <a class="navlink" href="sobre.html">Sobre TEMBA</a>
+                </li>
+                <li class="navitem">
+                    <a class="navlink" href="#gallary">Galeria</a>
+                </li>
+                <li class="navitem">
+                    <a class="navlink" href="#booktable">Agendar</a>
+                </li>
             </ul>
             <a class="navbarbrand mauto" href="#">
                 <img src="assets/imgs/logo.svg" class="brandimg" alt="">
                 <span class="brandtxt">TEMBA ESTÉTICA</span>
             </a>
             <ul class="navbarnav">
-                <li class="navitem"><a class="navlink" href="SERVICIOS.html">Servicios</a></li>
-                <li class="navitem"><a class="navlink" href="testimonios.html">Clientes</a></li>
-                <li class="navitem"><a class="navlink" href="contacta.html">Contacta</a></li>
+                <li class="navitem">
+                    <a class="navlink" href="SERVICIOS.html">Servicios<span class="sronly">(current)</span></a>
+                </li>
+                <li class="navitem">
+                    <a class="navlink" href="testimonios.html">Clientes</a>
+                </li>
+                <li class="navitem">
+                    <a class="navlink" href="contacta.html">Contacta</a>
+                </li>
+		    		<li class="navitem dropdown">
+                    <a href="SERVICIOS.html" class="btn btnprimary mlxl4 dropdowntoggle" datatoggle="dropdown">COMPRAS</a>
+                    <ul class="dropdownmenu">
+                        <li><a class="dropdownitem" href="seviciosfaciales.html">FACIAL</a></li>
+                        <li><a class="dropdownitem" href="servicioscorporales.html">CORPORAL</a></li>
+                        <li><a class="dropdownitem" href="tatuajes.html">TATUAJES</a></li>
+                        <li><a class="dropdownitem" href="peluqueria.html">PELUQUERIA</a></li>
+                        <li><a class="dropdownitem" href="cursos.html">CURSOS</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </nav>
+
+
+    
     
     <div class="gallery">
         <div class="item">
