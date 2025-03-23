@@ -1,1 +1,115 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=devicewidth, initialscale=1, shrinktofit=no">
+    <meta name="description" content="Start your development with FoodHut landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Temba Estética </title>
 
+    <! font icons >
+    <link rel="stylesheet" href="vendors/themifyicons/css/themifyicons.css">
+    <link rel="stylesheet" href="vendors/animate/animate.css">
+
+    <! Bootstrap + FoodHut main styles >
+    <link rel="stylesheet" href="css/foodhut.css">
+    <style>
+        .offeralert {
+            color: pink;
+            font-weight: bold;
+        }
+        .gallery {
+            display: grid;
+            grid-template-rows: repeat(6, auto);
+            gap: 20px;
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .gallery .item {
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 10px;
+        }
+        .gallery .description {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        .gallery .btn-paypal {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #0070ba;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <! Navbar >
+    <nav class="customnavbar navbar navbarexpandlg navbardark fixedtop" dataspy="affix" dataoffsettop="10">
+        <button class="navbartoggler" type="button" datatoggle="collapse" datatarget="#navbarSupportedContent" ariacontrols="navbarSupportedContent" ariaexpanded="false" arialabel="Toggle navigation">
+            <span class="navbartogglericon"></span>
+        </button>
+        <div class="collapse navbarcollapse" id="navbarSupportedContent">
+            <ul class="navbarnav">
+                <li class="navitem"><a class="navlink" href="index.html">Inicio</a></li>
+                <li class="navitem"><a class="navlink" href="sobre.html">Sobre TEMBA</a></li>
+                <li class="navitem"><a class="navlink" href="#gallary">Galeria</a></li>
+                <li class="navitem"><a class="navlink" href="#booktable">Agendar</a></li>
+            </ul>
+            <a class="navbarbrand mauto" href="#">
+                <img src="assets/imgs/logo.svg" class="brandimg" alt="">
+                <span class="brandtxt">TEMBA ESTÉTICA</span>
+            </a>
+            <ul class="navbarnav">
+                <li class="navitem"><a class="navlink" href="SERVICIOS.html">Servicios</a></li>
+                <li class="navitem"><a class="navlink" href="testimonios.html">Clientes</a></li>
+                <li class="navitem"><a class="navlink" href="contacta.html">Contacta</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="gallery">
+        <div class="item">
+            <img src="https://via.placeholder.com/800x200" alt="Imagen 1">
+            <p class="description">Descripción del producto 1</p>
+            <a href="https://www.paypal.com" class="btn-paypal">Comprar</a>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/800x200" alt="Imagen 2">
+            <p class="description">Descripción del producto 2</p>
+            <a href="https://www.paypal.com" class="btn-paypal">Comprar</a>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/800x200" alt="Imagen 3">
+            <p class="description">Descripción del producto 3</p>
+            <a href="https://www.paypal.com" class="btn-paypal">Comprar</a>
+        </div>
+    </div>
+
+    <! CONTACT Section >
+    <div id="contact" class="containerfluid bgdark textlight bordertop wow fadeIn">
+        <div class="row">
+            <div class="colmd6 px0">
+                <div id="map" style="width: 100%; height: 100%; minheight: 400px"></div>
+            </div>
+            <div class="colmd6 px5 hasheightlg middleitems">
+                <h3>ENCUENTRANOS</h3>
+                <p>Sientete libre de contactar con Temba para cualquier consulta. Tienes tres opciones: ir al centro, por teléfono o por correo.</p>
+                <div class="textmuted">
+                    <p><span class="tilocationpin pr3"></span> Calle del Estudio, Santander</p>
+                    <p><span class="tisupport pr3"></span> +34606</p>
+                    <p><span class="tiemail pr3"></span> temba@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
