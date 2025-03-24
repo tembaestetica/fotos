@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with FoodHut landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Temba Estética</title>
+   
+    <!-- font icons -->
+    <link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
+
+    <link rel="stylesheet" href="vendors/animate/animate.css">
+
+    <!-- Bootstrap + FoodHut main styles -->
+	<link rel="stylesheet" href="css/foodhut.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    
+    <!-- Navbar -->
+    <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top" data-spy="affix" data-offset-top="10">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sobre.html">SobreTEMBA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Galeria.html">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="agendar.html">Agendar</a>
+                </li>
+            </ul>
+            <a class="navbar-brand m-auto" href="#">
+                <img src="assets/imgs/logo.svg" class="brand-img" alt="">
+                <span class="brand-txt">TEMBA ESTÉTICA</span>
+            </a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="SERVICIOS.html">Servicios<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="testimonios.html">Clientes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactar.html">Contacta</a>
+                </li>
+                <li class="nav-item">
+                   
+                   <a href="SERVICIOS.html" class="btn btn-primary ml-xl-4">COMPRAS</a>
+			    <ul class="submenu">
+            <li><a href="serviciosfaciales.html">FACIAL</a></li>
+            <li><a href="servicioscorporales.html">CORPORAL</a></li>
+            <li><a href="tatuajes.html">TATUAJES</a></li>
+            <li><a href="peluqueria.html">PELUQUERIA</a></li>
+            <li><a href="cursos.html">CURSOS</a>
+	    </li></ul>	    
+
+		    
+            </ul>
+        </div>
+    </nav>
+
+
+       
+
+
+
+
+
+
+
+
+	<!-- Tratamiento  -->
+<div id="about" class="container-fluid wow fadeIn" data-wow-duration="1.5s">
+    <div class="row align-items-center mt-5 pt-18">
+        <div class="col-lg-6 has-img-bg">
+            <!-- Coloca aquí la imagen -->
+            <img src="imgs2/Corporal_0006.jpg" alt="#" class="img-fluid"> <!-- Asegúrate de colocar la ruta correcta -->
+        </div>
+        <div class="col-lg-6">
+            <div class="row justify-content-center">
+                <div class="col-sm-8 py-3 my-3 text-center"> <!-- Añadido text-center -->
+                    <!-- Espacio al inicio -->
+                    <h3 class="mb-4 pt-5"> Tratamiento 1: Hidratación Profunda </h3>
+                    <p><strong>Descripción del Tratamiento:</strong></p>
+<p> Si sufres de un cuero cabelludo seco y escamoso, este tratamiento es ideal para ti. 
+
+</p>
+                        <p><strong> : Utilizamos un suero enriquecido con ingredientes humectantes como el ácido hialurónico y aceites esenciales que restauran la hidratación. Este tratamiento alivia la picazón y ayuda a mantener un equilibrio en la salud del cuero cabelludo, promoviendo un cabello más brillante y saludable.</strong></p>
+                  
+                    <!-- Botón "Compra ya" -->
+                    <div class="text-center mt-4">
+                        <a href="https://www.paypal.com/ncp/payment/JQXM5MAEN2CXW" class="btn btn-danger mb-4">Compra ya</a>
+                    </div>
+
+                    <p class="offer-alert">
+        </div>
+    </div>
+</div>
+	    
+    <!-- CONTACT Section -->
+    <div id="contact" class="container-fluid bg-dark text-light border-top wow fadeIn">
+        <div class="row">
+            <div class="col-md-6 px-0">
+                <div id="map" style="width: 100%; height: 100%; min-height: 400px"></div>
+            </div>
+            <div class="col-md-6 px-5 has-height-lg middle-items">
+                <h3>ENCUÉNTRANOS</h3>
+                <p>Siente libre de contactar con Temba para cualquier consulta. Tienes tres opciones: ir al centro (pide cita para no tener que esperar, dinos que es la primera vez que llamas), por teléfono (si no te podemos coger, te devolveremos la llamada) y por correo dejando toda la información, nos pondremos en contacto contigo. ¡A qué esperas!</p>
+                <div class="text-muted">
+                    <p><span class="ti-location-pin pr-3"></span> Calle del Estudio, Santander</p>
+                    <p><span class="ti-support pr-3"></span> +34606</p>
+                    <p><span class="ti-email pr-3"></span> temba@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page footer -->
+    <div class="container-fluid bg-dark text-light has-height-md middle-items border-top text-center wow fadeIn">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>NUESTRO CORREO</h3>
+                <p class="text-muted">temba@gmail.com</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>LLÁMANOS</h3>
+                <p class="text-muted">+34606</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>BUSCÁNOS</h3>
+                <p class="text-muted">Calle del Centro, Santander</p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-dark text-light text-center border-top wow fadeIn">
+        <p class="mb-0 py-3 text-muted small">&copy; Copyright <script>document.write(new Date().getFullYear())</script> HECHO <i class="ti-heart text-danger"></i> POR <a href="http://">ANAZAW</a></p>
+    </div>
+    <!-- End of page footer -->
+
+    <!-- Core -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- Bootstrap affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- WOW.js -->
+    <script src="assets/vendors/wow/wow.js"></script>
+    
+    <!-- Google Maps -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+
+    <!-- FoodHut JS -->
+    <script src="assets/js/foodhut.js"></script>
+
+</body>
+</html>
+
