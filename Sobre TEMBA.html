@@ -1,3 +1,85 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=devicewidth, initialscale=1, shrinktofit=no">
+    <meta name="description" content="Start your development with FoodHut landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Temba Estética </title>
+
+    <! font icons >
+    <link rel="stylesheet" href="vendors/themifyicons/css/themifyicons.css">
+    <link rel="stylesheet" href="vendors/animate/animate.css">
+
+    <! Bootstrap + FoodHut main styles >
+    <link rel="stylesheet" href="css/foodhut.css">
+    <style>
+        .offeralert {
+            color: pink;
+            fontweight: bold;
+        }
+    </style>
+</head>
+<body dataspy="scroll" datatarget=".navbar" dataoffset="40" id="home">
+    
+    <! Navbar >
+    <nav class="customnavbar navbar navbarexpandlg navbardark fixedtop" dataspy="affix" dataoffsettop="10">
+        <button class="navbartoggler" type="button" datatoggle="collapse" datatarget="#navbarSupportedContent" ariacontrols="navbarSupportedContent" ariaexpanded="false" arialabel="Toggle navigation">
+            <span class="navbartogglericon"></span>
+        </button>
+        <div class="collapse navbarcollapse" id="navbarSupportedContent">
+            <ul class="navbarnav">
+                <li class="navitem">
+                    <a class="navlink" href="index.html">Inicio</a>
+                </li>
+                <li class="navitem">
+                    <a class="navlink" href="sobre.html">Sobre TEMBA</a>
+                </li>
+                <li class="navitem">
+                    <a class="navlink" href="#gallary">Galeria</a>
+                </li>
+                <li class="navitem">
+                    <a class="navlink" href="#booktable">Agendar</a>
+                </li>
+            </ul>
+            <a class="navbarbrand mauto" href="#">
+                <img src="assets/imgs/logo.svg" class="brandimg" alt="">
+                <span class="brandtxt">TEMBA ESTÉTICA</span>
+            </a>
+            <ul class="navbarnav">
+                <li class="navitem">
+                    <a class="navlink" href="SERVICIOS.html">Servicios<span class="sronly">(current)</span></a>
+                </li>
+                <li class="navitem">
+                    <a class="navlink" href="testimonios.html">Clientes</a>
+                </li>
+                <li class="navitem">
+                    <a class="navlink" href="contacta.html">Contacta</a>
+                </li>
+		    		<li class="navitem dropdown">
+                    <a href="SERVICIOS.html" class="btn btnprimary mlxl4 dropdowntoggle" datatoggle="dropdown">COMPRAS</a>
+                    <ul class="dropdownmenu">
+                        <li><a class="dropdownitem" href="seviciosfaciales.html">FACIAL</a></li>
+                        <li><a class="dropdownitem" href="servicioscorporales.html">CORPORAL</a></li>
+                        <li><a class="dropdownitem" href="tatuajes.html">TATUAJES</a></li>
+                        <li><a class="dropdownitem" href="peluqueria.html">PELUQUERIA</a></li>
+                        <li><a class="dropdownitem" href="cursos.html">CURSOS</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+	
 <div id="about" class="container-fluid wow fadeIn" id="about" data-wow-duration="1.5s">
     <div class="row">
         <div class="col-lg-6 has-img-bg">
@@ -16,3 +98,70 @@
         </div>
     </div>
 </div>
+
+
+    <! CONTACT Section >
+    <div id="contact" class="containerfluid bgdark textlight bordertop wow fadeIn">
+        <div class="row">
+            <div class="colmd6 px0">
+                <div id="map" style="width: 100%; height: 100%; minheight: 400px"></div>
+            </div>
+            <div class="colmd6 px5 hasheightlg middleitems">
+                <h3>ENCUENTRANOS</h3>
+                <p>Sientete libre de contactar con Temba para cualquier consulta. Tienes tres opciones: ir al centro (pide cita para no tener que esperar, dinos que es la primera vez que llamas), por teléfono (si no te podemos coger, te devolveremos la llamada) y por correo dejando toda la información, nos pondremos en contacto contigo. ¡A qué esperas!</p>
+                <div class="textmuted">
+                    <p><span class="tilocationpin pr3"></span> Calle del Estudio, Santander</p>
+                    <p><span class="tisupport pr3"></span> +34606</p>
+                    <p><span class="tiemail pr3"></span> temba@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <! Page footer >
+    <div class="containerfluid bgdark textlight hasheightmd middleitems bordertop textcenter wow fadeIn">
+        <div class="row">
+            <div class="colsm4">
+                <h3>NUESTRO CORREO</h3>
+                <p class="textmuted">temba@gmail.com</p>
+            </div>
+            <div class="colsm4">
+                <h3>LLÁMANOS</h3>
+                <p class="textmuted">+34606</p>
+            </div>
+            <div class="colsm4">
+                <h3>BUSCÁNOS</h3>
+                <p class="textmuted">Calle del Centro, Santander</p>
+            </div>
+        </div>
+    </div>
+    <div class="bgdark textlight textcenter bordertop wow fadeIn">
+        <p class="mb0 py3 textmuted small">&copy; Copyright <script>document.write(new Date().getFullYear())</script> HECHO <i class="tiheart textdanger"></i> POR <a href="http://">ANAZAW</a></p>
+    </div>
+    <! End of page footer >
+
+    <! Core >
+    <script src="assets/vendors/jquery/jquery3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <! Bootstrap affix >
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <! WOW.js >
+    <script src="assets/vendors/wow/wow.js"></script>
+    
+    <! Google Maps >
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+
+    <! FoodHut JS >
+    <script src="assets/js/foodhut.js"></script>
+
+</body>
+</html>
+                
+                
+
+       
+
+
+   
