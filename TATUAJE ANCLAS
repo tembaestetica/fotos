@@ -1,1 +1,206 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Comienza tu desarrollo con la página de aterrizaje de FoodHut.">
+    <meta name="author" content="Devcrud">
+    <title>Temba Estética</title>
+
+    <!-- Iconos de fuente -->
+    <link rel="stylesheet" href="vendors/themifyicons/css/themifyicons.css">
+    <link rel="stylesheet" href="vendors/animate/animate.css">
+    
+    <!-- Bootstrap + estilos principales de FoodHut -->
+    <link rel="stylesheet" href="css/foodhut.css">
+    <style>
+        .offeralert {
+            color: pink;
+            font-weight: bold;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Tres imágenes por fila */
+            gap: 20px;
+            max-width: 900px; /* Ajusta el ancho máximo según sea necesario */
+            margin: 120px auto 0 auto; /* Espacio superior de  120px este el que hay cambiar */
+            text-align: center;
+        }
+        .gallery img {
+            width: 80%; /* Imágenes más pequeñas */
+            height: auto;
+            border-radius: 8px;
+        }
+        .gallery .item {
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 10px;
+        }
+        .gallery .description {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        .gallery .btn-paypal {
+            color: #fff
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #0070ba;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Navbar --><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with FoodHut landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Temba Estética< Free Bootstrap 4.3.x template</title>
+   
+    <!-- font icons -->
+    <link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
+
+    <link rel="stylesheet" href="vendors/animate/animate.css">
+
+    <!-- Bootstrap + FoodHut main styles -->
+	<link rel="stylesheet" href="css/foodhut.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    
+    <!-- Navbar -->
+    <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top" data-spy="affix" data-offset-top="10">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sobre.html">SobreTEMBA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Galeria.html">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="agendar.html">Agendar</a>
+                </li>
+            </ul>
+            <a class="navbar-brand m-auto" href="#">
+                <img src="assets/imgs/logo.svg" class="brand-img" alt="">
+                <span class="brand-txt">TEMBA ESTÉTICA</span>
+            </a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="SERVICIOS.html">Servicios<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="testimonios.html">Clientes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactar.html">Contacta</a>
+                </li>
+                <li class="nav-item">
+                   
+                   <a href="SERVICIOS.html" class="btn btn-primary ml-xl-4">COMPRAS</a>
+			    <ul class="submenu">
+            <li><a href="serviciosfaciales.html">FACIAL</a></li>
+            <li><a href="servicioscorporales.html">CORPORAL</a></li>
+            <li><a href="tatuajes.html">TATUAJES</a></li>
+            <li><a href="peluqueria.html">PELUQUERIA</a></li>
+            <li><a href="cursos.html">CURSOS</a>
+	    </li></ul>	    
+
+		    
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <div class="gallery" id="gallery">
+        <div class="item">
+            <img src="imgs/diseño_050_Hamsa_Mockup_550x825.jpg" alt="Tatuaje 050">
+            <p class="description">Tatuaje 050 - 100x100 _ mandala lineal</p>
+            <a href="https://www.paypal.com/ncp/payment/B4JT7QTGNAA8J" class="btn-paypal">Comprar</a>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/400x200" alt="Imagen 2"> <!-- Tamaño reducido -->
+            <p class="description">Descripción del producto 2</p>
+            <a href="https://www.paypal.com" class="btn-paypal">Comprar</a>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/400x200" alt="Imagen 3"> <!-- Tamaño reducido -->
+            <p class="description">Descripción del producto 3</p>
+            <a href="https://www.paypal.com" class="btn-paypal">Comprar</a>
+        </div>
+        <!-- Agrega más ítems según sea necesario -->
+    </div>
+
+    <!-- CONTACT Section -->
+    <div id="contact" class="container-fluid bg-dark text-light border-top wow fadeIn">
+        <div class="row">
+            <div class="col-md-6 px-0">
+                <div id="map" style="width: 100%; height: 100%; min-height: 400px"></div>
+            </div>
+            <div class="col-md-6 px-5 has-height-lg middle-items">
+                <h3>ENCUÉNTRANOS</h3>
+                <p>Siéntete libre de contactar con Temba para cualquier consulta. Tienes tres opciones: ir al centro, por teléfono o por correo.</p>
+                <div class="text-muted">
+                    <p><span class="ti-location-pin pr-3"></span>Calle del Estudio, Santander</p>
+                    <p><span class="ti-support pr-3"></span> +34606</p>
+                    <p><span class="ti-email pr-3"></span>temba@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page footer -->
+    <div class="container-fluid bg-dark text-light has-height-md middle-items border-top text-center wow fadeIn">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>NUESTRO CORREO</h3>
+                <p class="text-muted">temba@gmail.com</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>LLÁMANOS</h3>
+                <p class="text-muted">+34606</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>BÚSCANOS</h3>
+                <p class="text-muted">Calle del Centro, Santander</p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-dark text-light text-center border-top wow fadeIn">
+        <p class="mb-0 py-3 text-muted small">&copy; Copyright <script>document.write(new Date().getFullYear())</script> HECHO <i class="ti-heart text-danger"></i> POR <a href="http://">ANAZAW</a></p>
+    </div>
+    <!-- End of page footer -->
+
+    <!-- Core scripts -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- Bootstrap affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- wow.js -->
+    <script src="assets/vendors/wow/wow.js"></script>
+    
+    <!-- Google Maps -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+
+    <!-- FoodHut js -->
+    <script src="assets/js/foodhut.js"></script>
+
+</body>
+</html>
+
