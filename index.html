@@ -16,9 +16,31 @@
 
     <!-- Bootstrap + FoodHut main styles -->
     <link rel="stylesheet" href="css/foodhut.css">
+
+    <style>
+        /* Aumentamos el espacio en la parte superior del encabezado */
+        .header {
+            padding-top: 100px; /* Aumentar según sea necesario */
+            height: 100vh; /* Definir altura para visualizar mejor */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative; /* Para asegurar que overlay funcione bien */
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
+            text-align: center; /* Centramos el texto */
+        }
+    </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    
+
     <!-- Navbar -->
     <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top">
         <a class="navbar-brand" href="#">
@@ -68,10 +90,6 @@
         </div>
     </nav>
 
-
-
-
-	
     <!-- Header -->
     <header id="home" class="header">
         <div class="overlay text-white text-center">
@@ -81,6 +99,11 @@
         </div>
     </header>
 
+
+
+
+
+	
 
 	
 	
@@ -274,14 +297,10 @@
     <!-- FoodHut js -->
     <script src="assets/js/foodhut.js"></script>
 
-
-
-
-<!-- Bootstrap JS (necesario para el funcionamiento de la navbar) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-		
 		
 
 </body>
