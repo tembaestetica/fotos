@@ -16,6 +16,18 @@
 
     <!-- Bootstrap + FoodHut main styles -->
     <link rel="stylesheet" href="css/foodhut.css">
+
+    <style>
+        /* Asegurarse de que el menú desplegable no cubra el contenido */
+        .dropdown-menu {
+            z-index: 1030; /* Un valor más alto para que esté en la parte superior */
+        }
+
+        /* Espaciado adicional para mejorar la legibilidad */
+        .header {
+            padding-top: 80px; /* Asegúrate de que el contenido no se cubra, ajusta según sea necesario */
+        }
+    </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     
@@ -67,8 +79,7 @@
             <a href="SERVICIOS.html" class="btn btn-primary ml-xl-4">COMPRAS</a>
         </div>
     </nav>
-
-    <!-- Header -->
+<!-- Header -->
     <header id="home" class="header">
         <div class="overlay text-white text-center">
             <h1 class="display-2 font-weight-bold my-3">TEMBA ESTÉTICA</h1>
@@ -76,6 +87,7 @@
             <a class="btn btn-lg btn-primary" href="#gallery">Ve a nuestra galería</a>
         </div>
     </header>
+	
 
 
 
@@ -270,12 +282,10 @@
 
 
 		
- <!-- Bootstrap JS (necesario para el funcionamiento de la navbar) -->
+<!-- Bootstrap JS (necesario para el funcionamiento de la navbar) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
 
 		
 		
