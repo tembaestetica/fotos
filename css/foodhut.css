@@ -3476,16 +3476,13 @@ input[type="button"].btn-block {
     right: auto;
     left: 0;
   }
-  .dropdown-menu-xl-right {
-    right: 0;
-    left: auto;
-  }
+
 }
 
 .dropup .dropdown-menu {
   top: auto;
   bottom: 100%;
-  margin-top: 0;
+  margin-top: 15;
   margin-bottom:0.125rem;
 }
 
@@ -3535,7 +3532,7 @@ input[type="button"].btn-block {
   top: 0;
   right: 100%;
   left: auto;
-  margin-top: 0;
+  margin-top: 15;
   margin-right: 0.125rem;
 }
 
