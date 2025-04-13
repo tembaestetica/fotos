@@ -11200,8 +11200,8 @@ pre {
 .header {
 
 
-   padding-top: 150px; /* Aumentar según sea necesario */
-            height: 150vh; 
+   padding-top: 50px; /* Aumentar según sea necesario */
+            height: 50vh; 
   background: url(../imgs/main.jpg) no-repeat center center fixed;
   background-size: cover;
   min-height: relative;
