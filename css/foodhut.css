@@ -11198,12 +11198,20 @@ pre {
 }
 
 .header {
-  height: 150vh;
+  height: 100vh;
   max-height: 900px;
+
+   padding-top: 100px; /* Aumentar según sea necesario */
+            height: 100vh; 
   background: url(../imgs/main.jpg) no-repeat center center fixed;
   background-size: cover;
-  min-height: 750px;
+  min-height: relative;
 }
+
+
+
+
+
 
 .header .overlay {
   height: 100%;
@@ -11227,6 +11235,21 @@ pre {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
+.overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
+            text-align: center; /* Centramos el texto */
+        }
+
+
+
+
+
 
 .header-title {
   font-size: 2.4rem;
