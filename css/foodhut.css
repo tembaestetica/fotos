@@ -11197,7 +11197,45 @@ pre {
   bottom: 50%;
 }
 
+
+
 .header {
+  height: 100vh;
+  max-height: 900px;
+  background: url(../imgs/main.jpg) no-repeat center center fixed;
+  background-size: cover;
+  min-height: 750px;
+}
+
+
+
+
+
+
+.header .overlay {
+  height: 100%;
+  background: rgba(33, 37, 41, 0.85);
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+
 
 
    padding-top: 50px; /* Aumentar según sea necesario */
@@ -11223,6 +11261,7 @@ pre {
             background: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
             text-align: center; /* Centramos el texto */
         }
+
 
 
 
