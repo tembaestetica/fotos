@@ -3486,7 +3486,7 @@ input[type="button"].btn-block {
   top: auto;
   bottom: 100%;
   margin-top: 0;
-  margin-bottom: 0.125rem;
+  margin-bottom:20px;
 }
 
 .dropup .dropdown-toggle::after {
@@ -3532,7 +3532,7 @@ input[type="button"].btn-block {
 }
 
 .dropleft .dropdown-menu {
-  top: 5;
+  top: 0;
   right: 100%;
   left: auto;
   margin-top: 0;
