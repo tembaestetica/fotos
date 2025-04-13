@@ -2649,7 +2649,7 @@ textarea.form-control {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 0;
+    margin-bottom: 10;
   }
   .form-inline .form-group {
     display: -webkit-box;
@@ -2661,7 +2661,7 @@ textarea.form-control {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
+    -webkit-box-direction: column;
     -webkit-flex-flow: row wrap;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
@@ -2669,7 +2669,7 @@ textarea.form-control {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 0;
+    margin-bottom: 10;
   }
   .form-inline .form-control {
     display: inline-block;
@@ -3532,7 +3532,7 @@ input[type="button"].btn-block {
 }
 
 .dropleft .dropdown-menu {
-  top: 0;
+  top: 5;
   right: 100%;
   left: auto;
   margin-top: 0;
