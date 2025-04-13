@@ -6,7 +6,7 @@
     <meta name="description" content="Start your development with FoodHut landing page.">
     <meta name="author" content="Devcrud">
     <title>Temba Estética</title>
-
+   
     <!-- font icons -->
     <link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
     <link rel="stylesheet" href="vendors/animate/animate.css">
@@ -16,32 +16,18 @@
 
     <!-- Bootstrap + FoodHut main styles -->
     <link rel="stylesheet" href="css/foodhut.css">
-
-    <style>
-        /* Asegurarse de que el menú desplegable no cubra el contenido */
-        .dropdown-menu {
-            z-index: 1030; /* Un valor más alto para que esté en la parte superior */
-        }
-
-        /* Espaciado adicional para mejorar la legibilidad */
-        .header {
-            padding-top: 80px; /* Asegúrate de que el contenido no se cubra, ajusta según sea necesario */
-        }
-    </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     
     <!-- Navbar -->
     <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand m-auto" href="#">
             <img src="assets/imgs/logo.svg" class="brand-img" alt="">
             <span class="brand-txt">TEMBA ESTÉTICA</span>
         </a>
-        
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
@@ -51,17 +37,16 @@
                     <a class="nav-link" href="sobre.html">Sobre TEMBA</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#gallery">Galeria</a>
+                    <a class="nav-link" href="#gallary">Galeria</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="agendar.html">Agendar</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Servicios
                     </a>
-                    <!-- Menú desplegable -->
-                    <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="serviciosfaciales.html">FACIAL</a>
                         <a class="dropdown-item" href="servicioscorporales.html">CORPORAL</a>
                         <a class="dropdown-item" href="tatuajes.html">TATUAJES</a>
@@ -79,6 +64,10 @@
             <a href="SERVICIOS.html" class="btn btn-primary ml-xl-4">COMPRAS</a>
         </div>
     </nav>
+
+
+
+	
 <!-- Header -->
     <header id="home" class="header">
         <div class="overlay text-white text-center">
