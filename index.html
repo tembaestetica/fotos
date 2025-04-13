@@ -6,7 +6,7 @@
     <meta name="description" content="Start your development with FoodHut landing page.">
     <meta name="author" content="Devcrud">
     <title>Temba Estética</title>
-   
+
     <!-- font icons -->
     <link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
     <link rel="stylesheet" href="vendors/animate/animate.css">
@@ -21,13 +21,15 @@
     
     <!-- Navbar -->
     <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top">
-        <a class="navbar-brand m-auto" href="#">
+        <a class="navbar-brand" href="#">
             <img src="assets/imgs/logo.svg" class="brand-img" alt="">
             <span class="brand-txt">TEMBA ESTÉTICA</span>
         </a>
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+        
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
@@ -37,16 +39,16 @@
                     <a class="nav-link" href="sobre.html">Sobre TEMBA</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#gallary">Galeria</a>
+                    <a class="nav-link" href="#gallery">Galeria</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="agendar.html">Agendar</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Servicios
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-menu" aria-labelledby="servicesDropdown">
                         <a class="dropdown-item" href="serviciosfaciales.html">FACIAL</a>
                         <a class="dropdown-item" href="servicioscorporales.html">CORPORAL</a>
                         <a class="dropdown-item" href="tatuajes.html">TATUAJES</a>
@@ -64,6 +66,21 @@
             <a href="SERVICIOS.html" class="btn btn-primary ml-xl-4">COMPRAS</a>
         </div>
     </nav>
+
+    <!-- Header -->
+    <header id="home" class="header">
+        <div class="overlay text-white text-center">
+            <h1 class="display-2 font-weight-bold my-3">TEMBA ESTÉTICA</h1>
+            <h2 class="display-4 mb-5">Porque verte bien nunca pasa de moda de la cabeza a los pies, arte y belleza a la vez.</h2>
+            <a class="btn btn-lg btn-primary" href="#gallery">Ve a nuestra galería</a>
+        </div>
+    </header>
+
+
+
+
+
+	
 
    
 
@@ -243,6 +260,17 @@
 
     <!-- FoodHut js -->
     <script src="assets/js/foodhut.js"></script>
+
+
+
+    <!-- Bootstrap JS (necesario para el funcionamiento de la navbar) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+		
+		
 
 </body>
 </html>
