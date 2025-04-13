@@ -11201,7 +11201,7 @@ pre {
 
 .header {
   height: 100vh;
-  max-height: 900px;
+  max-height: 1100px;
   background: url(../imgs/main.jpg) no-repeat center center fixed;
   background-size: cover;
   min-height: 750px;
