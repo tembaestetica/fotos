@@ -11207,11 +11207,6 @@ pre {
   min-height: 750px;
 }
 
-
-
-
-
-
 .header .overlay {
   height: 100%;
   background: rgba(33, 37, 41, 0.85);
@@ -11234,35 +11229,6 @@ pre {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
-
-
-
-   padding-top: 50px; /* Aumentar según sea necesario */
-            height: 50vh; 
-  background: url(../imgs/main.jpg) no-repeat center center fixed;
-  background-size: cover;
-  min-height: relative;
-}
-
-
-
-
-
-
-
-
-.overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
-            text-align: center; /* Centramos el texto */
-        }
-
-
 
 
 
