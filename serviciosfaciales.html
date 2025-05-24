@@ -75,7 +75,6 @@
 	
   <!-- BLOG Section  -->
 
-
 <div id="blog" class="container-fluid bg-dark text-light py-5 text-center wow fadeIn">
     <h2 class="section-title py-5">SERVICIOS Y CURSOS</h2>
     <div class="row justify-content-center">
@@ -85,7 +84,7 @@
                     <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="serviciosfaciales.html" role="tab" aria-controls="pills-home" aria-selected="true">Tratamientos faciales</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " id="pills-profile-tab" data-toggle="pill" href="servicioscorporales.html" role="tab" aria-controls="pills-profile" aria-selected="false">Tratamientos corporales</a>
+                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="servicioscorporales.html" role="tab" aria-controls="pills-profile" aria-selected="false">Tratamientos corporales</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="tatuajes.html" role="tab" aria-controls="pills-profile" aria-selected="false">Tatuajes</a>
@@ -100,8 +99,8 @@
         </div>
     </div>
 </div>
-	
 
+	
 <div class="tab-pane fade show active" id="foods" role="tabpanel" aria-labelledby="pills-home-tab">
     <div class="row">
         <div class="col-md-4">
@@ -256,6 +255,17 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script>
+  // Cuando hagas clic en cualquier enlace, marca ese enlace en rojo y elimina la marca de los demás
+  document.querySelectorAll('#pills-tab .nav-link').forEach(link => {
+    link.addEventListener('click', function() {
+      // Quitar la clase 'active' de todos
+      document.querySelectorAll('#pills-tab .nav-link').forEach(l => l.classList.remove('active'));
+      // Agregar la clase 'active' al clicado
+      this.classList.add('active');
+    });
+  });
+</script>
 		
 
 </body>
