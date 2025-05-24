@@ -209,10 +209,6 @@
 
 
 
-<!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-
 
 
 	
@@ -231,7 +227,15 @@
 
     <!-- FoodHut js -->
     <script src="assets/js/foodhut.js"></script>
-
+	
+$(document).ready(function() {
+  $('#pills-tab .nav-link').on('click', function() {
+    // Remueve la clase 'active' de todos los enlaces
+    $('#pills-tab .nav-link').removeClass('active');
+    // Agrega la clase 'active' al que se clickeó
+    $(this).addClass('active');
+  });
+});
 		
 
 </body>
