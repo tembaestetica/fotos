@@ -251,20 +251,13 @@
     <!-- FoodHut js -->
     <script src="assets/js/foodhut.js"></script>
 
-<!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	<script>
-  // Cuando hagas clic en cualquier enlace, marca ese enlace en rojo y elimina la marca de los demás
-  document.querySelectorAll('#pills-tab .nav-link').forEach(link => {
-    link.addEventListener('click', function() {
-      // Quitar la clase 'active' de todos
-      document.querySelectorAll('#pills-tab .nav-link').forEach(l => l.classList.remove('active'));
-      // Agregar la clase 'active' al clicado
-      this.classList.add('active');
-    });
+<script>
+$(document).ready(function() {
+  $('#pills-tab .nav-link').on('click', function() {
+    $('#pills-tab .nav-link').removeClass('active');
+    $(this).addClass('active');
   });
+});
 </script>
 		
 
